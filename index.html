@@ -138,7 +138,7 @@ document.getElementById("feedbackForm").addEventListener("submit", async functio
         message: document.getElementById("message").value
     };
 
-    const response = await fetch("/feedback", {
+    const response = await fetch("/api/feedback", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
